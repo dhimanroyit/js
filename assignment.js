@@ -1,3 +1,5 @@
+
+// Kilometer to Meter function
 function kilometerToMeter(distance) {
   if(distance < 0) // Negetive value check
     return 'distance can not be negative';
@@ -5,6 +7,7 @@ function kilometerToMeter(distance) {
   return meter;
 }
 
+// Budget Calculator function
 function budgetCalculator(watchQuantity = 0, 
                           phoneQuantity = 0, 
                           laptopQuantity = 0) { // set default value
@@ -26,6 +29,7 @@ function budgetCalculator(watchQuantity = 0,
   return budgetTotal;
 }
 
+// Hotel Cost function
 function hotelCost(dayCount) {
   if(dayCount < 0) return 'Day value can not be negative'; // check negative for negative input
   var dayPrice = 100, // declare variables
@@ -42,7 +46,7 @@ function hotelCost(dayCount) {
       } else if (dayCount > isDay10 && dayCount <= isDay20) { // if days within 20
         isDay20 = dayCount - isDay10;
         return totalCost = priceCal(isDay10, dayPrice) 
-                              + priceCal(isDay20, dayPrice80); // price calculation for days within 20
+                         + priceCal(isDay20, dayPrice80); // price calculation for days within 20
       } else { // if day is upto 20
         var isDayUp20 = dayCount - isDay20;
         return totalCost = priceCal(isDay10, dayPrice) 
@@ -51,6 +55,7 @@ function hotelCost(dayCount) {
       }
 }
 
+// Mega Friend Function
 function megaFriend(arr) {
   if(arr.length == 0) return 'friend list can not be empty'; // check empty array
   var arrLength = arr.length, // declare all variable
